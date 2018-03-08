@@ -1,0 +1,15 @@
+{
+  "name": "dictionary",
+  "version": "1.0.0",
+  "description": "Command line dictionary to get the defintion,synonyms,antonyms and examples for given word",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Manikannan",
+  "license": "ISC",
+  "dependencies": {
+    "commander": "^2.15.0",
+    "inquirer": "^5.1.0"
+  }
+}
