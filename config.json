@@ -1,0 +1,51 @@
+{
+    "endPoints" : {
+      "definition" : {
+          "url" : "{baseUrl}/word.json/{word}/definitions",
+          "headers" : {
+            "limit" : 1,
+            "includeRelated"  : true,
+            "useCanonical" : true,
+            "includeTags" : false
+          }
+      },
+      "synonym" : {
+        "url" : "{baseUrl}/word.json/{word}/relatedWords?relationshipTypes=synonym",
+        "headers" : {
+          "limitPerRelationshipType" : 10,
+          "useCanonical" : true
+        }
+      },
+      "antonym" : {
+        "url" : "{baseUrl}/word.json/{word}/relatedWords?relationshipTypes=antonym",
+        "headers" : {
+          "limitPerRelationshipType" : 10,
+          "useCanonical" : true
+        }
+      },
+      "topExample" : {
+        "url" : "{baseUrl}/word.json/{word}/topExample",
+        "headers" : {
+          "limitPerRelationshipType" : 10,
+          "useCanonical" : false
+        }
+      },
+      "wordOfTheDay" : {
+        "url" : "{baseUrl}/words.json/wordOfTheDay?",
+        "headers" : {
+  
+        }
+      },
+      "randomWord" : {
+        "url" : "{baseUrl}/words.json/randomWord",
+        "headers" : {
+          "minLength" : 5,
+          "hasDictionaryDef" : true
+        }
+      }
+    },
+   "properties" : {
+      "api_key" : "a2a73e7b926c924fad7001ca3111acd55af2ffabf50eb4ae5",
+      "baseUrl" : "http://api.wordnik.com:80/v4"
+    }
+  }
