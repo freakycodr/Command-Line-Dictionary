@@ -9,7 +9,10 @@
   "author": "Manikannan",
   "license": "ISC",
   "dependencies": {
+    "bluebird": "^3.5.1",
     "commander": "^2.15.0",
-    "inquirer": "^5.1.0"
+    "inquirer": "^5.1.0",
+    "request": "^2.79.0",
+    "request-promise": "^4.1.1"
   }
 }
